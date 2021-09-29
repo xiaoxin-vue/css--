@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      /* width: 600px;
+      height: 500px; */
+      transform: rotateX(80deg);
+    }
+
+    .box2 {
+      width: 400px;
+      height: 400px;
+      background: url('./ttround.png') no-repeat center center;
+      background-size: contain;
+      animation: round 5s linear infinite; 
+    }
+
+    @keyframes round{
+      0%{
+        transform: rotateZ(0deg);/*从0度开始*/
+      }
+      100%{
+        transform: rotateZ(360deg);/*360度结束*/
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="box2"></div>
+  </div>
+</body>
+</html>

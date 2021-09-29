@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .box {
+      position: relative;
+      width: 200px;
+      height: 300px;
+      margin: 0 auto;
+      transition: all 1s ease;
+    }
+
+    .box1,
+    .box2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 300px;
+      background-size: 100% 100%;
+      transition: all 1s ease;
+      /* 设置背面不可见 */
+      backface-visibility: hidden;
+    }
+
+    .box1 {
+      background: url('./001.jpeg') no-repeat;
+    }
+
+    .box2 {
+      background: url('./002.jpeg') no-repeat;
+      transform: rotateY(180deg);
+    }
+
+    .box:hover .box1 {
+      transform: rotateY(180deg);
+    }
+
+    .box:hover .box2 {
+      transform: rotateY(0);
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="box1"></div>
+    <div class="box2"></div>
+  </div>
+</body>
+</html>

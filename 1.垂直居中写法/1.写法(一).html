@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 绝对定位(子绝父相) */
+    
+    /* 使用margin: auto; */
+    /* 必须指定position的四个方位为0 */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .father {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color: skyblue;
+    }
+    .son {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      margin: auto;
+      background-color: springgreen;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div class="father">
+      <div class="son"></div>
+    </div>
+  </div>
+</body>
+
+</html>

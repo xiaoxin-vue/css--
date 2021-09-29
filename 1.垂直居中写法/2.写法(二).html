@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 绝对定位(子绝父相) */
+
+    /* 先指定相对于父元素的left top 50%; */
+    /* 在此之前须知道子元素的宽高
+    使用margin-left: -25px;
+        margin-top: -25px;*/
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .father {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color: skyblue;
+    }
+    .son {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 50px;
+      height: 50px;
+      margin-left: -25px;
+      margin-top: -25px;
+      background-color: springgreen;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div class="father">
+      <div class="son"></div>
+    </div>
+  </div>
+</body>
+
+</html>
